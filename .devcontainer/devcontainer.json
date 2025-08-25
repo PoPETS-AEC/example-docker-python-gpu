@@ -1,0 +1,26 @@
+{
+  "name": "example-docker-python-gpu",
+  "dockerFile": "../Dockerfile",
+  "postCreateCommand": "",
+  "runArgs": [
+    "--gpus=all"
+  ],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        // Other helpers for python
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "ms-python.black-formatter",
+        // pdf viewer to see plotted figures
+        "tomoki1207.pdf"
+      ],
+      "settings": {
+        // General settings
+        "files.eol": "\n",
+        "editor.formatOnSave": true,
+        "python.defaultInterpreterPath": "/opt/venv"
+      }
+    }
+  }
+}
